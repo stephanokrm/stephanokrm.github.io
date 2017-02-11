@@ -1,59 +1,69 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+@font-face {
+    font-family: FiraCode-Regular;
+    src: url(../fonts/FiraCode-Regular.ttf);
 }
 
-p {
-  line-height: 2rem;
+.firacode-regular {
+    font-family: FiraCode-Regular;
+    text-align: justify;
+}
+
+.shadow {
+    text-shadow: 0px 0px 10px #000;
+}
+
+h1 {
+    text-shadow: 0px 0px 5px #000;
 }
 
 .button-collapse {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 750px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+
+.parallax-container .section {
     width: 100%;
-  }
+}
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
+    #index-banner .section {
+        top: 0;
+    }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
+    .main-title {
+        font-size: 50px;
+        line-height: 75px;
+        margin-top: 45px !important;
+    }
+
+    .go-down-btn {
+        margin-top: 25px !important;
+    }
+
+    .parallax-container {
+        min-height: 450px !important;
+    }
+
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
 
 .pacifico {
@@ -63,3 +73,42 @@ footer.page-footer {
 nav ul a:hover {
     background-color: transparent !important;
 }
+
+nav {
+    background-color: transparent;
+}
+
+body {
+    background-color: #13212E;
+}
+
+.footer-color {
+    background-color: #0d1822 !important;
+}
+
+.shadow-box {
+    box-shadow: 0px 0px 10px #000;
+}
+
+.links {
+    margin-left: 25px;
+}
+
+.main-title {
+    margin-top: 100px;
+}
+
+.go-down-btn {
+    margin-top: 250px;
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+

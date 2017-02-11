@@ -1,8 +1,12 @@
-(function($){
-  $(function(){
+/* global Materialize */
 
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+(function ($) {
+    $(function () {
 
-  }); // end of document ready
+        $('.button-collapse').sideNav();
+        $('.parallax').parallax();
+        $('.scrollspy').scrollSpy();
+
+    }); // end of document ready
 })(jQuery); // end of jQuery name space
+
