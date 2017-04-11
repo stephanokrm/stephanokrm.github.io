@@ -1,349 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Stephano Ramos</title>
-    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./fonts/lato/latofonts.css" type="text/css" rel="stylesheet" />
-    <link href="./fonts/lato/latostyle.css" type="text/css" rel="stylesheet" />
-    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./node_modules/animate.css/animate.min.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:600,700">-->
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/style.css"/>
 </head>
-
-<body>
-    <header>
+<body class="animated" id="particles-js" style="display: none;">
+<div id="content">
+    <div class="navbar-fixed animated" id="navbar" style="display: none;">
         <nav>
-            <div class="nav-wrapper container">
-                <a href="https://stephanokrm.github.io/" class="brand-logo primary-text">Stephano Ramos</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons primary-text">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#introduction" class="primary-text">Sobre</a>
-                    </li>
-                    <li><a href="#portfolio" class="primary-text">Portfólio</a>
-                    </li>
-                    <li><a href="#technology" class="primary-text">Tecnologias</a>
-                    </li>
-                    <li><a href="#contact" class="primary-text">Contato</a>
-                    </li>
-                    <li><a class="waves-effect waves-light btn-large github-button" href="https://github.com/stephanokrm" target="_blank">GitHub</a>
-                    </li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#introduction" class="primary-text">Sobre</a>
-                    </li>
-                    <li><a href="#portfolio" class="primary-text">Portfólio</a>
-                    </li>
-                    <li><a href="#technology" class="primary-text">Tecnologias</a>
-                    </li>
-                    <li><a href="#contact" class="primary-text">Contato</a>
-                    </li>
-                    <li><a class="waves-effect waves-light btn-large github-button" href="https://github.com/stephanokrm" target="_blank">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="container-fluid full-height">
-            <div class="row valign-wrapper">
-                <div class="col s12 m6 l6 sm-center">
-                    <h1 class="title gt-sm-right" data-shadow-text="Desenvolvedor">Desenvolvedor<br>Web</h1>
-                </div>
-                <div class="col s12 m6 l6">
-                    <img src="./img/website-design.png" class="website-design-image">
-                </div>
-            </div>
-            <div class="row center">
-                <div class="col s12 m12 l12">
-                    <a href="#introduction" class="rotateBounce animated bounce btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_down</i></a>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid section scrollspy introduction-section" id="introduction" style="background-image: url(./img/nav-background.png);">
-            <div class="container">
-                <div class="row center">
-                   <div class="col s12 m12 l12">
-                        <h1 class="white-text">Sobre</h1>
-                    </div>
-                </div>
-                <div class="row">
-                   <div class="col s12 m6 l4 center">
-                        <img class="profile-image" src="img/profile.jpg" alt="Profile Image">
-                    </div>
-                    <div class="col s12 m6 l8 s12-m-top">
-                        <div class="row">
-                            <div class="col s12 m12 l12 header-terminal">
-                                <div class="circle" style="background-color: #C23824;"></div>
-                                <div class="circle" style="background-color: #F2C600;"></div>
-                                <div class="circle" style="background-color: #1AAF5D;"></div>
-                            </div>
-                            <div class="col s12 m12 l12 body-terminal">
-                                <span class="terminal-text">Stephano@ ~/Desktop</span>
-                                <div class="element terminal-text"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row center">
-                    <div class="col s12 m12 l12">
-                        <a href="#portfolio" class="rotateBounce animated bounce btn-floating btn-large waves-effect white"><i class="black-text material-icons">keyboard_arrow_down</i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <main>
-        
-        <div class="container-fluid section scrollspy portfolio-section" id="portfolio" style="height: 100vh;">
-            <div class="container m-top">
-                <div class="row">
-                    <div class="col s12 m12 l12">
-                        <h2 class="portfolio-title">Portfólio</h2>
-                    </div>
-                </div>
-                <div class="row no-m-bottom center m-top">
-                    <div class="col s12 m12 l12">
-                        <a href="#technology" class="rotateBounce animated bounce btn-floating btn-large waves-effect white"><i class="black-text material-icons">keyboard_arrow_down</i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid section scrollspy technology-section" id="technology" style="height: 100vh;">
-            <div class="container m-top">
-                <div class="row">
-                    <div class="col s12 m12 l12">
-                        <h2 class="technology-title">Tecnologias</h2>
-                    </div>
-                </div>
-
-                <div class="row no-m-bottom center m-top">
-                    <div class="col s12 m12 l12">
-                        <a href="#portfolio" class="rotateBounce animated bounce btn-floating btn-large waves-effect white"><i class="black-text material-icons">keyboard_arrow_down</i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
-
-    <!-- <nav class="hide-on-med-and-up">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo pacifico white-text">Stephano Ramos</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#introduction">Sobre</a></li>
-                    <li><a href="#introduction">Portfólio</a></li>
-                    <li><a href="#introduction">Tecnologias</a></li>
-                    <li><a href="#introduction">Sobre</a></li>
-                </ul>
+                <a href="!#" class="brand-logo animated">Stephano Ramos</a>
             </div>
         </nav>
-
-        <div id="index-banner" class="parallax-container">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row hide-on-small-and-down">
-                        <div class="col s12 m6 l4">
-                            <h2 class="left white-text pacifico shadow">Stephano Ramos</h2>
-                        </div>
-                        <div class="col s12 m6 l8">
-                            <h4 class="right pacifico shadow links"><a href="#introduction" class="white-text">Contato</a></h4>
-                            <h4 class="right pacifico shadow links"><a href="#introduction" class="white-text">Portfólio</a></h4>
-                            <h4 class="right pacifico shadow links"><a href="#introduction" class="white-text">Tecnologias</a></h4>
-                            <h4 class="right pacifico shadow links"><a href="#introduction" class="white-text">Sobre</a></h4>
-                        </div>
-                    </div>
-                    <div class="row center">
-                        <div class="col s12 m12 l12">
-                            <h1 class="center white-text pacifico shadow main-title">Desenvolvedor Web</h1>
-                        </div>
-                    </div>
-                    <div class="row center">
-                        <div class="col s12 m12 l12">
-                            <a class="center btn-floating btn-large waves-effect waves-light teal lighten-2 go-down-btn" href="#introduction"><i class="material-icons">keyboard_arrow_down</i></a>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div class="container valign-wrapper animated" id="first_section" style="display: none;">
+        <div class="row center valign">
+            <div class="col s12 m12 l12">
+                <h2 class="white-text title">Desenvolvedor Web</h2>
+                <p class="white-text description">Meu foco é criar experiências digitais que ligam marcas com a cultura
+                    para
+                    inspirar, entreter e produzir resultados.</p>
             </div>
-            <div class="parallax"><img src="img/background1.jpg" alt="Background Image 1"></div>
-        </div>
-
-
-        <div class="container section scrollspy" id="introduction">
-            <div class="row center">
-                <div class="col s12 m12 l12">
-                    <h1 class="left white-text pacifico">Sobre</h1>
-                </div>
-            </div>
-
-            <div class="row center">
-                <div class="col s12 m4 l5">
-                    <img class="shadow-box circle" width="300" src="img/profile.jpg" alt="Profile Image">
-                </div>
-                <div class="col s12 m8 l7">
-                    <h5 class="light white-text firacode-regular">$ Sou desenvolvedor web vindo de Canoas, Brasil. Gosto de construir de tudo, desde sites para pequenas empresas, até aplicativos para web e mobile. Se você possui uma empresa a procura de seu espaço na web ou um empregador querendo contratar, você pode entrar em contato comigo aqui.</h5>
-                </div>
+            <div class="col s12 m12 l12">
+                <i class="material-icons white-text arrow-downward animated" id="arrow_downward">arrow_downward</i>
             </div>
         </div>
-
-
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container" style="margin-top: 200px; margin-bottom: 200px">
-                    <h1 class="header left white-text pacifico">Portfólio</h1>
-                    <br><br>
-                </div>
+    </div>
+    <div class="container-fluid valign-wrapper animated" id="second_section" style="opacity: 1;">
+        <div class="row center valign custom-card">
+            <div class="col s12 m12 l12">
+                <img src="profile-image.jpg" class="profile-image">
             </div>
-            <div class="parallax"><img src="img/background2.jpg" alt="Background Image 2"></div>
-        </div>
-
-        <div class="container">
-            <div class="section">
-                <div class="row center">
-                    <div class="col s12 m12 l12">
-                        <h1 class="left white-text pacifico">Tecnologias</h1>
-                    </div>
-                </div>
-
-                <div class="row center">
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/php.png" alt="PHP">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Plataforma frequentemente utilizada para o desenvolvimento de servidores web.</span>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/laravel.png" alt="Laravel">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Laravel é um framework PHP livre e open-source para o desenvolvimento de sistemas web que utilizam o padrão MVC.</span>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/angular.png" alt="Angular">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Mantidos pela Google, o Angular 1 e 2 são Frameworks MVVM para estruturar aplicações web single pages modularizadas e concisas.</span>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-
-                <div class="row center">
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/ionic.png" alt="Ionic">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Ionic 1 e 2 são kits de desenvolvimento de software de código aberto completo para desenvolvimento de aplicações móveis híbridas.</span>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/mysql.png" alt="MySQL">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</span>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/oracle.png" alt="Oracle Database">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">O banco de dados Oracle é um sistema de gerenciamento de banco de dados objeto-relacional.</span>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-
-                <div class="row center">
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/sass.png" alt="SASS">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Extensão do CSS que permite o uso de variáveis, regras aninhadas, importações in-line e muito mais.</span>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/jenkins.png" alt="Jenkins">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Jenkins ajuda a automatizar a parte não-humana de todo o processo de desenvolvimento de software, com agora coisas comuns como a integração contínua.</span>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <img width="250" src="img/gulp.png" alt="Gulp">
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col s12 m12 l12">
-                                <span class="description firacode-regular">Toolkit JavaScript de código aberto, usado como um sistema de geração de streaming no desenvolvimento web front-end.</span>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-
+            <div class="col s12 m12 l12">
+                <p class="about-description">Completei o Segundo Grau integrado ao Técnico em Informática pelo Instituto
+                    Federal de
+                    Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS) no ano de 2016, e, atualmente,
+                    estou cursando Bacharelado em Ciências da Computação na instituição Universidade
+                    Luterana do Brasil (ULBRA). Possuo sólidos conhecimentos em Desenvolvimento Web,
+                    incluindo os aspectos de análise e produção que a programação de software exige. Minha
+                    experiência possui ênfase em PHP e JavaScript, visto que as linguagens são vastamente
+                    implantadas nos sistemas da Prefeitura Municipal de Canoas, atual local de trabalho, onde
+                    também são utilizadas metodologias ágeis, como o Kanban e o Scrum.</p>
             </div>
         </div>
-
-        <footer class="page-footer footer-color">
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2017, feito por stephanokrm
+    </div>
+    <div class="container-fluid valign-wrapper animated" id="third_section" style="opacity: 1">
+        <div class="row valign">
+            <div class="col s12 m6 l4 animated" id="first_card">
+                <div class="custom-card">
+                    <div class="row">
+                        <div class="col s12 m12 l12 center">
+                            <img class="mobile" src="mobile.png">
+                        </div>
+                    </div>
+                    <h4>Desenvolvimento e design de aplicativos móveis</h4>
+                    <p>Você está pronto para ter seu próprio aplicativo na App Store ou na Google Play?
+                        Através de tecnologias como o Ionic e o React Native eu
+                        construo aplicativos para iOS e Android que são intuitivos e divertidos de usar.</p>
                 </div>
             </div>
-        </footer> -->
+            <div class="col s12 m6 l4 animated" id="second_card">
+                <div class="custom-card">
+                    <div class="row">
+                        <div class="col s12 m12 l12 center">
+                            <img class="mobile" src="mobile.png">
+                        </div>
+                    </div>
+                    <h4>Design e desenvolvimento de aplicativos web</h4>
+                    <p>Se você quer construir um produto que esteja disponível para os usuários em todas as
+                        plataformas e dispositivos, um aplicativo da web é a resposta. Construo soluções personalizadas
+                        para oferecer conteúdos e recursos aos seus usuários.</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l4 animated" id="third_card">
+                <div class="custom-card">
+                    <div class="row">
+                        <div class="col s12 m12 l12 center">
+                            <img class="mobile" src="mobile.png">
+                        </div>
+                    </div>
+                    <h4>Nome, Marca e Identidade</h4>
+                    <p>Criar um aplicativo é apenas metade da batalha. Você precisa de um nome cativante e uma marca corajosa
+                        para cortar o mar da concorrência e estabelecer-se no mercado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/init.js"></script>
 
+    <!--<div class="navbar-fixed">-->
+    <!--<nav>-->
+    <!--<div class="nav-wrapper container-fluid">-->
+    <!--<a href="#!" class="brand-logo">Stephano Ramos</a>-->
+    <!--<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>-->
+    <!--<ul class="side-nav" id="mobile-demo">-->
+    <!--<li><a href="sass.html">Sass</a></li>-->
+    <!--<li><a href="badges.html">Components</a></li>-->
+    <!--<li><a href="collapsible.html">Javascript</a></li>-->
+    <!--<li><a href="mobile.html">Mobile</a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</nav>-->
+    <!--</div>-->
+    <!--<main class="container">-->
+    <!--<div class="row valign-wrapper animated slideInDown full-height">-->
+    <!--<div class="col s12 m12 l12 valign center">-->
+    <!--<h2 class="white-text">Desenvolvedor Web</h2>-->
+    <!--<p class="white-text">Meu foco é criar experiências digitais que ligam marcas com a cultura para-->
+    <!--inspirar, entreter e produzir resultados.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col s12 m12 l12 center">-->
+    <!--<img src="profile-image.jpg" class="profile-image">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row section scrollspy" id="about">-->
+    <!--<div class="col s12 m12 l12">-->
+    <!--<h2 class="white-text">Sobre</h2>-->
+    <!--<p class="box justify">Completei o Segundo Grau integrado ao Técnico em Informática pelo Instituto Federal de-->
+    <!--Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS) no ano de 2016, e, atualmente,-->
+    <!--estou cursando Bacharelado em Ciências da Computação na instituição Universidade-->
+    <!--Luterana do Brasil (ULBRA). Possuo sólidos conhecimentos em Desenvolvimento Web,-->
+    <!--incluindo os aspectos de análise e produção que a programação de software exige. Minha-->
+    <!--experiência possui ênfase em PHP e JavaScript, visto que as linguagens são vastamente-->
+    <!--implantadas nos sistemas da Prefeitura Municipal de Canoas, atual local de trabalho, onde-->
+    <!--também são utilizadas metodologias ágeis, como o Kanban e o Scrum.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row section scrollspy" id="technologies">-->
+    <!--<div class="col s12 m12 l12">-->
+    <!--<h2 class="white-text">Tecnologias</h2>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col s12 m6 l4 box">-->
+    <!--<div class="row">-->
+    <!--<div class="col s12 m12 l12 center">-->
+    <!--<img class="mobile" src="mobile.png">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<h4>Desenvolvimento e design de aplicativos móveis</h4>-->
+    <!--<p class="justify">Você está pronto para ter seu próprio aplicativo na App Store ou na Google Play? Através de tecnologias como o Ionic e o React Native eu-->
+    <!--construo aplicativos para iOS e Android que são intuitivos e divertidos de usar.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</main>-->
+</div>
+
+
+<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script type="text/javascript" src="./node_modules/particles.js/particles.js"></script>
+<script type="text/javascript" src="./js/jquery.scrollfire.min.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
 </body>
-
 </html>

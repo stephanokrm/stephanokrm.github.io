@@ -1,0 +1,14 @@
+{
+  "name": "personal-page",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/stephanokrm/stephanokrm.github.io.git",
+  "author": "Stephano Ramos <stephano.ramos.p@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.98.1",
+    "particles.js": "^2.0.0"
+  }
+}
