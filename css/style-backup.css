@@ -1,0 +1,193 @@
+/* ---- reset ---- */
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/*nav ul a {*/
+/*font-family: 'Raleway', sans-serif;*/
+/*font-weight: 700;*/
+/*text-transform: uppercase;*/
+/*font-size: 14px;*/
+/*letter-spacing: 1px;*/
+/*}*/
+
+/*nav ul a:hover {*/
+/*background-color: transparent;*/
+/*color: aliceblue;*/
+/*}*/
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+    position: fixed;
+    z-index: -1;
+}
+
+/*h4 {*/
+/*font-size: 24px;*/
+/*font-family: 'Raleway', sans-serif;*/
+/*font-weight: 600;*/
+/*}*/
+
+/*p {*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-weight: 400;*/
+/*font-size: 18px;*/
+/*line-height: 1.7;*/
+
+/*}*/
+
+#content {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+#first_section {
+    height: 100%;
+}
+
+#first_section .arrow-downward {
+    font-size: 40px;
+}
+
+#first_section .description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 1.4em;
+}
+
+#first_section .title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    line-height: 1.4em;
+}
+
+#second_section {
+    height: 100%;
+}
+
+#second_section .profile-image {
+    width: 20%;
+    border-radius: 100%;
+}
+
+#second_section .about-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+#third_section {
+    height: 100%;
+}
+
+#third_section .mobile {
+    width: 50%;
+}
+
+.brand-logo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.custom-card {
+    background-color: #fff;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .08), 0 0 1px 0 rgba(0, 0, 0, .4);
+    padding: 20px 30px !important;
+    border-radius: 6px;
+    min-height: 565px;
+}
+
+.custom-card h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.custom-card p {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.container-fluid {
+    padding: 0 50px;
+}
+
+.nav-wrapper {
+    padding: 25px 50px;
+}
+
+/*.nav-wrapper {*/
+/*padding-top: 50px;*/
+/*}*/
+
+/*.justify {*/
+/*text-align: justify;*/
+/*}*/
+
+/*.brand-logo {*/
+/*font-family: 'Source Sans Pro', sans-serif;*/
+/*font-weight: 300;*/
+/*font-size: 1.8rem !important;*/
+/*}*/
+
+/*.btn, .btn-large, .btn-flat {*/
+/*border-radius: 30px;*/
+/*}*/
+
+/*.profile-image {*/
+/*border-radius: 100%;*/
+/*width: 20%;*/
+/*box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .08), 0 0 1px 0 rgba(0, 0, 0, .4);*/
+/*}*/
+
+/*.mobile {*/
+/*width: 50%;*/
+/*}*/
+
+/*.full-height {*/
+/*min-height: 100%;*/
+/*}*/
+
+/*.box {*/
+/*background-color: #fff;*/
+/*box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .08), 0 0 1px 0 rgba(0, 0, 0, .4);*/
+/*padding: 20px 30px !important;*/
+/*border-radius: 6px;*/
+/*}*/
+
+@media only screen and (max-width: 600px) {
+    .row.valign-wrapper {
+        display: inherit;
+    }
+
+    /*.services-web-design {*/
+    /*width: 340px;*/
+    /*}*/
+    /*.profile-image {*/
+    /*width: 50%;*/
+    /*}*/
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #253039;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}

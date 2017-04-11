@@ -1,193 +1,248 @@
-/* ---- reset ---- */
 body {
-    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-
-nav {
-    background-color: transparent;
-    box-shadow: none;
-}
-
-/*nav ul a {*/
-/*font-family: 'Raleway', sans-serif;*/
-/*font-weight: 700;*/
-/*text-transform: uppercase;*/
-/*font-size: 14px;*/
-/*letter-spacing: 1px;*/
-/*}*/
-
-/*nav ul a:hover {*/
-/*background-color: transparent;*/
-/*color: aliceblue;*/
-/*}*/
 
 canvas {
     display: block;
     vertical-align: bottom;
     position: fixed;
-    z-index: -1;
 }
 
-/*h4 {*/
-/*font-size: 24px;*/
-/*font-family: 'Raleway', sans-serif;*/
-/*font-weight: 600;*/
-/*}*/
-
-/*p {*/
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-weight: 400;*/
-/*font-size: 18px;*/
-/*line-height: 1.7;*/
-
-/*}*/
-
-#content {
-    position: absolute;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
+nav {
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 0;
 }
 
-#first_section {
-    height: 100%;
+nav .nav-wrapper {
+    padding-top: 25px;
 }
 
-#first_section .arrow-downward {
-    font-size: 40px;
-}
-
-#first_section .description {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 3em;
-    line-height: 1.4em;
-}
-
-#first_section .title {
+nav .brand-logo {
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 5em;
-    line-height: 1.4em;
-}
-
-#second_section {
-    height: 100%;
-}
-
-#second_section .profile-image {
-    width: 20%;
-    border-radius: 100%;
-}
-
-#second_section .about-description {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2em;
-    font-weight: 300;
-    line-height: 1.4em;
-}
-
-#third_section {
-    height: 100%;
-}
-
-#third_section .mobile {
-    width: 50%;
-}
-
-.brand-logo {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
     text-transform: uppercase;
 }
 
-.custom-card {
-    background-color: #fff;
-    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .08), 0 0 1px 0 rgba(0, 0, 0, .4);
-    padding: 20px 30px !important;
-    border-radius: 6px;
-    min-height: 565px;
+#first_container {
+    height: 100%;
 }
 
-.custom-card h4 {
+#first_container .title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    line-height: 1em;
+    opacity: 0;
+}
+
+#first_container .description {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
+    opacity: 0;
+}
+
+#first_container .arrow-downward {
+    opacity: 0;
+}
+
+#second_container {
+    height: 100%;
+}
+
+#second_container .card-panel {
+    border-radius: 6px;
+}
+
+#second_container .profile-image {
+    border-radius: 100%;
+}
+
+#second_container .description {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+#third_container {
+    height: 100%;
+}
+
+#third_container .mobile {
+    width: 50%;
+}
+
+#third_container .card-panel {
+    min-height: 635px;
+}
+
+#third_container .card-panel h4 {
     font-family: 'Oswald', sans-serif;
 }
 
-.custom-card p {
+#third_container .card-panel p {
     text-align: justify;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.7;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300 !important;
 }
 
-.container-fluid {
-    padding: 0 50px;
-}
-
-.nav-wrapper {
-    padding: 25px 50px;
-}
-
-/*.nav-wrapper {*/
-/*padding-top: 50px;*/
-/*}*/
-
-/*.justify {*/
-/*text-align: justify;*/
-/*}*/
-
-/*.brand-logo {*/
-/*font-family: 'Source Sans Pro', sans-serif;*/
-/*font-weight: 300;*/
-/*font-size: 1.8rem !important;*/
-/*}*/
-
-/*.btn, .btn-large, .btn-flat {*/
-/*border-radius: 30px;*/
-/*}*/
-
-/*.profile-image {*/
-/*border-radius: 100%;*/
-/*width: 20%;*/
-/*box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .08), 0 0 1px 0 rgba(0, 0, 0, .4);*/
-/*}*/
-
-/*.mobile {*/
-/*width: 50%;*/
-/*}*/
-
-/*.full-height {*/
-/*min-height: 100%;*/
-/*}*/
-
-/*.box {*/
-/*background-color: #fff;*/
-/*box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .08), 0 0 1px 0 rgba(0, 0, 0, .4);*/
-/*padding: 20px 30px !important;*/
-/*border-radius: 6px;*/
-/*}*/
-
-@media only screen and (max-width: 600px) {
-    .row.valign-wrapper {
-        display: inherit;
-    }
-
-    /*.services-web-design {*/
-    /*width: 340px;*/
-    /*}*/
-    /*.profile-image {*/
-    /*width: 50%;*/
-    /*}*/
-}
-
-/* ---- particles.js container ---- */
-#particles-js {
+#main {
+    position: absolute;
     width: 100%;
     height: 100%;
+}
+
+#particles-js {
     background-color: #253039;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
+
+.container-fluid {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.full-width {
+    width: 100%;
+     margin-left: 0 !important;
+     margin-right: 0 !important;
+}
+
+.navbar-fixed {
+    position: fixed;
+}
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+    #first_container h1 {
+        font-size: 3.25em;
+    }
+
+    #first_container p {
+        font-size: 1.5em;
+    }
+
+    #first_container .arrow-downward {
+        font-size: 25px;
+    }
+
+    #first_container .col-arrow-downward {
+        padding-top: 25px;
+    }
+
+    #second_container .profile-image {
+        border-radius: 100%;
+        width: 40%;
+    }
+
+    #second_container .description {
+        font-size: 1.2rem;
+    }
+
+    #second_container .card-panel {
+        margin: 25rem 0 1rem 0;
+    }
+
+    #third_container > .row {
+        margin-top: 600%;
+    }
+
+    #third_container .card-panel p {
+        font-size: 1.2rem;
+    }
+}
+/* Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    #first_container h1 {
+        font-size: 3.50em;
+    }
+
+    #first_container p {
+        font-size: 2em;
+    }
+
+    #first_container .arrow-downward {
+        font-size: 30px;
+    }
+
+    #first_container .col-arrow-downward {
+        padding-top: 20px;
+    }
+
+    #second_container .profile-image {
+        border-radius: 100%;
+        width: 35%;
+    }
+
+    #second_container .description {
+        font-size: 1.3rem;
+    }
+
+    #third_container .card-panel p {
+        font-size: 1.3rem;
+    }
+}
+/* Desktop Devices */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    #first_container h1 {
+        font-size: 3.75em;
+    }
+
+    #first_container p {
+        font-size: 2.5em;
+    }
+
+    #first_container .arrow-downward {
+        font-size: 35px;
+    }
+
+    #first_container .col-arrow-downward {
+        padding-top: 15px;
+    }
+
+    #second_container .profile-image {
+        border-radius: 100%;
+        width: 30%;
+    }
+
+    #second_container .description {
+        font-size: 1.4rem;
+    }
+
+    #third_container .card-panel p {
+        font-size: 1.4rem;
+    }
+}
+/* Large Desktop Devices */
+@media screen and (min-width: 1201px) {
+    #first_container h1 {
+        font-size: 4em;
+    }
+
+    #first_container p {
+        font-size: 3em;
+    }
+
+    #first_container .arrow-downward {
+        font-size: 40px;
+    }
+
+    #first_container .col-arrow-downward {
+        padding-top: 10px;
+    }
+
+    #second_container .profile-image {
+        border-radius: 100%;
+        width: 25%;
+    }
+
+    #second_container .description {
+        font-size: 1.5rem;
+    }
+
+    #third_container .card-panel p {
+        font-size: 1.5rem;
+    }
+}
+
